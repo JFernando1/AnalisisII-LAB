@@ -22,7 +22,8 @@
     <test name="testSelenium">
         
         <classes>
-            <class name="testSelenium.SeleniumTest"/>
+            <class name="testSelenium.testSuite"/>
+         
         </classes>
         
     </test>

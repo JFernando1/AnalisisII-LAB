@@ -9,6 +9,9 @@ import java.io.Serializable;
 import javax.inject.Named;
 
 import javax.enterprise.context.SessionScoped;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 
 
@@ -43,12 +46,13 @@ public class Bean implements Serializable{
         this.operacion = operacion;
     }
     
+    
     public Bean() {
         num1=0.0;
         num2=0.0;
         resultado=0.0;
     }
-
+    @AfterTest
     public Double getNum1() {
         return num1;
     }
@@ -76,7 +80,7 @@ public class Bean implements Serializable{
    
     
     
-    
+   @Test
     public void ejecutar(){
         
         if(operacion!=null && !operacion.equals("")){

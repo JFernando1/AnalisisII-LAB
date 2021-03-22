@@ -20,7 +20,7 @@
     
     <test name="testngsuite">
         <classes>
-            <class name="testSelenium.SeleniumTest"/>
+            <class name="Beans.Bean"/>
         </classes>
     </test>
 
