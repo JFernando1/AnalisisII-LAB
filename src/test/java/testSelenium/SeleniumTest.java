@@ -45,8 +45,10 @@ public class SeleniumTest {
             
             WebElement usuario = driver.findElement(By.xpath("//*[@id=\"num1\"]"));
             usuario.sendKeys("5");
+            Thread.sleep(4000);
             WebElement pass = driver.findElement(By.xpath("//*[@id=\"num2\"]"));
             pass.sendKeys("5");
+            Thread.sleep(4000);
             WebElement btn = driver.findElement(By.xpath("//*[@id=\"ejecutar\"]"));
             btn.click();
         } catch (Exception e) {

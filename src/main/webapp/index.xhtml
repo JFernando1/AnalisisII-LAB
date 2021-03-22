@@ -8,40 +8,38 @@
     <h:head>
         <title>Practica</title>
     </h:head>
-    <style type="text/css">
-        button.ui-button {
-            margin-right: .5rem;
-        }
-    </style>
-    <h:body style="text-align:center">
-        <h:form id="form">
-            <p:panelGrid  columns="2">
+    <h:body>
+        <div class="operacion" align="center">
+            <h:form>
+                <p:panelGrid columns="2" >
+                    <p:outputLabel value="Resultado:"/>
+                    <h:outputLabel  id="resp" value="#{bean.resultado}" />
 
-                <p:outputLabel id="resp" value="#{operaciones.resp}"/>
-
-                <p:outputLabel for="input1" value="Ingrese primer número"/>
-                <p:inputText id="input1"   value="#{operaciones.num1}"/>
-                <p:outputLabel for="input2" value="Ingrese Segundo número"/>
-                <p:inputText id="input2"  value="#{operaciones.num2}"/>
-
-
-                <p:selectOneMenu id="option">
-                    <f:selectItem itemLabel="Select One" itemValue=""/>
-                    <f:selectItem itemLabel="Option1" itemValue="Option1"/>
-                    <f:selectItem itemLabel="Option2" itemValue="Option2"/>
-                    <f:selectItem itemLabel="Option3" itemValue="Option3"/>
-                    <f:facet name="footer">
-
-                        <h:outputText value="3 options" style="font-weight:bold;"/>
-                    </f:facet>
+                    <h:outputLabel for="num1" value="Numero 1" />
+                    <p:inputNumber id="num1" value="#{bean.num1}" required="true" />
+                   
+                    <p:outputLabel for="num2" value="Numero 2" />
+                    <p:inputNumber id="num2" value="#{bean.num2}" required="true" />
+                    <p:outputLabel for="operacion" value="Seleccione operacion "/>
+                    <p:selectOneMenu id="operacion" value="#{bean.operacion}" style="width:200px" required="true" >
+                    
+                    <f:selectItem itemLabel="Seleccione Operacion" itemValue="" noSelectionOption="true"/>
+                    <f:selectItem itemLabel="Multiplicar" itemValue="Multiplicar"/>
+                    <f:selectItem itemLabel="Dividir" itemValue="Dividir"/>
+                    <f:selectItem itemLabel="Sumar" itemValue="Sumar"/>
+                    <f:selectItem itemLabel="Restar" itemValue="Restar"/>
                 </p:selectOneMenu>
-                <p:commandButton value="Ejecutar" action="#{operaciones.ejecutar()}"> </p:commandButton>
+                </p:panelGrid>
+                
+                <p:commandButton  action="#{bean.ejecutar()}" value="Multiplicar" update="resp" />
+                
+               
+            </h:form>
+        </div>
 
-                <p:button onclick="#{operaciones.ejecutar()}"></p:button>
 
 
-            </p:panelGrid>
-        </h:form>
+
     </h:body>
 </html>
 

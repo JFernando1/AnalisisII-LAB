@@ -6,10 +6,8 @@
 
 
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
+import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.inject.New;
@@ -30,7 +28,7 @@ import javax.inject.Named;
 @RequestScoped
 @ManagedBean
 @SessionScoped
-public class operaciones {
+public class operaciones implements Serializable {
 
 private Double num1;
 private Double num2;
