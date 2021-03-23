@@ -72,7 +72,7 @@ public class Bean implements Serializable{
     public Double getResultado() {
         return resultado;
     }
-
+    @Test
     public void setResultado(Double resultado) {
         this.resultado = resultado;
     }
