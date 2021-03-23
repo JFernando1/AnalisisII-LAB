@@ -42,7 +42,7 @@ public class Bean implements Serializable{
     public String getOperacion() {
         return operacion;
     }
-
+    @Test
     public void setOperacion(String operacion) {
         this.operacion = operacion;
     }
