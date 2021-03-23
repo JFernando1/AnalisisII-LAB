@@ -37,7 +37,8 @@ public class Bean implements Serializable{
     private Double num2;
     private Double resultado;
     private String operacion;
-
+    
+    @Test
     public String getOperacion() {
         return operacion;
     }
