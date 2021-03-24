@@ -211,7 +211,7 @@ public class testSuite {
     }
     
     
-    @AfterClass
+    //@AfterClass
     public void closeBrowser(){
         driver.quit();
     }
