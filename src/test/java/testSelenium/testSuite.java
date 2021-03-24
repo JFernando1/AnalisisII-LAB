@@ -33,7 +33,7 @@ public class testSuite {
             //wait = new WebDriverWait(driver, 10);
             driver.manage().window().maximize();
            // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get("http://localhost:8080/Lab1-analisis/");
+            driver.get("http://localhost:9999/Lab1-analisis/");
         } catch (Exception e) {
             System.out.println(e.toString());
         }
