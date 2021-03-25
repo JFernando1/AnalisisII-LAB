@@ -3,8 +3,14 @@ echo "$version"
 
 VERSION_BITS=(${version//./ })
 
+echo ${VERSION_BITS[0]}
+echo ${VERSION_BITS[1]}
+echo ${VERSION_BITS[2]}
+
 
 nversion=${VERSION_BITS[2]}
+echo ${nversion:0:1}
+nversion=${nversion:0:1}
 nversion=$((nversion+1))
 newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
 echo "Creando un nuevo tag de la version $version a $newversion"
