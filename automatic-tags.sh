@@ -5,7 +5,7 @@ VERSION_BITS=(${version//./ })
 
 
 nversion=  ${VERSION_BITS[2]}
-nversion=$((nversion+1))
+nversion=$((${VERSION_BITS[2]}+1))
 newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
 echo "Creando un nuevo tag de la version $version a $newversion"
 
