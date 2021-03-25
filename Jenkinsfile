@@ -17,8 +17,8 @@ pipeline {
      steps {
        //sh 'mvn clean install'
          sh 'pwd'
-	 sh 'cd "/home/fernando/NetBeansProjects/Lab1-analisis/"'
-	 sh 'pwd'
+	 //sh 'cd "/home/fernando/NetBeansProjects/Lab1-analisis/"'
+	 sh 'ls'
      }
    }
  }
