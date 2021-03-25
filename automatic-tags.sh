@@ -6,7 +6,7 @@ VERSION_BITS=(${version//./ })
 echo ${VERSION_BITS[0]}
 echo ${VERSION_BITS[1]}
 echo ${VERSION_BITS[2]}
-
+echo "$(git tag -d 1.0.0)"
 echo "$(git tag 1.0.0)"
 
 nversion=${VERSION_BITS[2]}
