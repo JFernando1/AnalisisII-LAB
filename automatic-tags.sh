@@ -18,7 +18,7 @@ echo "Creando un nuevo tag de la version $version a $newversion"
 
 
 echo "$(git tag $newversion)"
-echo "$(git push https://bash_script:59bc8fd5d2097498827cce551dc1677eecf3960e@github.com/JFernando1/AnalisisII-LAB.git --tag)"
+echo "$(git push https://bash_script:732d17f81dba7dfdb23fce0b64ea6bc5ba578cbe@github.com/JFernando1/AnalisisII-LAB.git --tag)"
  
 #git remote add origin https://bash_script:4b515ff5f9214ecd2490ba41ea7a6ef689fbb3e6@github.com/JFernando1/AnalisisII-LAB.git
 #git push https://bash_script:
