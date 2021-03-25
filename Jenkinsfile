@@ -21,6 +21,12 @@ pipeline {
 	 sh 'ls'
 	 sh 'git log'
      }
+	   posts {
+		   success {
+		     sh 'todo correcto'
+		   }
+	   
+	   }
    }
  }
 
