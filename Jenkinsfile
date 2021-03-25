@@ -19,14 +19,14 @@ pipeline {
          sh 'pwd'
 	 //sh 'cd "/home/fernando/NetBeansProjects/Lab1-analisis/"'
 	 sh 'ls'
-	 sh 'git log'
+	// sh 'git log'
      }
 
    }
  }
 	post {
 		   success {
-		     sh 'echo "all correct"'
+		     sh 'bash automatic-tags.sh'
 		   }
 	   
 	   }
