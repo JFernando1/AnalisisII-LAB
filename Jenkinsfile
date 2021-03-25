@@ -23,7 +23,7 @@ pipeline {
      }
 	   post {
 		   success {
-		     sh 'todo correcto'
+		     echo 'todo correcto'
 		   }
 	   
 	   }
