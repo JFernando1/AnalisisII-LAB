@@ -21,13 +21,14 @@ pipeline {
 	 sh 'ls'
 	 sh 'git log'
      }
-	   post {
+
+   }
+ }
+	post {
 		   success {
-		     echo 'todo correcto'
+		     sh 'echo "all correct"'
 		   }
 	   
 	   }
-   }
- }
 
 }
