@@ -30,7 +30,7 @@ pipeline {
 		   withCredentials([usernamePassword(credentialsId:'jfer', passwordVariable:'PASSWORD',usernameVariable:'USERNAME')]){			
 		      // echo USERNAME
 		       script {
-			  env.encodedPass=URLEncoder.encode(PASS,"UTF-8")
+			  env.encodedPass=URLEncoder.encode(PASSWORD,"UTF-8")
 			}
 		       sh 'bash automatic-tags.sh'
 		       sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
