@@ -16,6 +16,7 @@ nversion=$((nversion+1))
 newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
 echo "Creando un nuevo tag de la version $version a $newversion"
 
+echo $(git describe --tags)"
 #echo $(git tag -d 1.0.1)"
 ##echo $(git tag -d 1.0.2)"
 #echo $(git tag -d 1.0.3)"
@@ -25,8 +26,11 @@ echo "Creando un nuevo tag de la version $version a $newversion"
 #echo $(git tag -d 1.0.7)"
 #echo $(git tag -d 1.0.8)"
 
-echo "$(git tag $newversion)"
-echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
+
+#crear nuevo tag
+#echo "$(git tag $newversion)"
+#push del nuevo tag
+#echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
  
 #git remote add origin https://bash_script:4b515ff5f9214ecd2490ba41ea7a6ef689fbb3e6@github.com/JFernando1/AnalisisII-LAB.git
 #git push https://bash_script:
