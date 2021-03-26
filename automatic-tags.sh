@@ -22,16 +22,34 @@ echo "Creando un nuevo tag de la version $version a $newversion"
 #echo "$(git tag -d 1.0.3)"
 #echo "$(git tag -d 1.0.4)"
 #echo "$(git tag -d 1.0.5)"
-echo "$(git tag -d 1.0.6)"
+#echo "$(git tag -d 1.0.6)"
 #echo $(git tag -d 1.0.7)"
 #echo $(git tag -d 1.0.8)"
 
 
 #crear nuevo tag
-#echo "$(git tag $newversion)"
+echo "$(git tag $newversion)"
 #push del nuevo tag
-#echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
+echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
  
+
+#pushing to repository
+echo "Ejecutando push al repositorio"
+echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #git remote add origin https://bash_script:4b515ff5f9214ecd2490ba41ea7a6ef689fbb3e6@github.com/JFernando1/AnalisisII-LAB.git
 #git push https://bash_script:
 #4b515ff5f9214ecd2490ba41ea7a6ef689fbb3e6@github.com/
