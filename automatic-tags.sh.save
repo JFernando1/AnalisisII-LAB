@@ -1,0 +1,15 @@
+version="$(git describe --tags)"
+echo "$version"
+
+VERSION_BITS=(${version//./ })
+
+fnum= ${VERSION_BITS[0]}
+echo $fnum
+snum= ${VERSIONBITS[1]}
+nversion=  ${VERSION_BITS[2]}
+nversion=$((nversion+1))
+newversion=$fnum1.$snum.$nversion
+echo "Creando un nuevo tag de la version $version a $newversion"
+
+
+
