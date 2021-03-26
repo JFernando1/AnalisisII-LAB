@@ -35,7 +35,7 @@ echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/Analis
 
 #pushing to repository
 echo "Ejecutando push al repositorio"
-echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git)"
+echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git HEAD:master)"
 
 
 
