@@ -36,7 +36,7 @@ pipeline {
 		       sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
 			//sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
 		       //sh 'bash newrelease.sh'
-			sh ('vrelease="$(git describe --tags)" && curl --data '{"tag_name":"$vrelase","target_commitish":"master","name":"v$vrelease","body":"Release of version $vrelease","draft":false,"prerelease":false}' https://${USERNAME}:${encodedPass}@agithub.com/JFernando1/AnalisisII-LAB/releases/')
+			sh ('vrelease="$(git describe --tags)" && curl --data \'{"tag_name":"$vrelase","target_commitish":"master","name":"v$vrelease","body":"Release of version $vrelease","draft":false,"prerelease":false}\' https://${USERNAME}:${encodedPass}@agithub.com/JFernando1/AnalisisII-LAB/releases/')
 
 			
 		   }
