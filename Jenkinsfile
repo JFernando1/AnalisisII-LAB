@@ -30,6 +30,7 @@ pipeline {
 		   withCredentials([usernamePassword(credentialsId:'jfer', passwordVariable:'PASSWORD',usernameVariable:'USERNAME')]){			
 		      // echo USERNAME
 		       sh 'bash automatic-tags.sh'
+		       sh ('git push https://${USERNAME}:${PASSWORD}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
 		   }
 
 		  // }
