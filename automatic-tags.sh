@@ -35,6 +35,8 @@ echo "Creando un nuevo tag de la version $version a $newversion"
 
 #pushing to repository
 echo "Ejecutando push al repositorio"
+echo "$(git config user.email \"fernalgz@cunori.edu.gt\")"
+echo "$(git config user.name \"JFernando1\")"
 echo "$(git add .)"
 echo "$(git commit -m \"war\")"
 echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git HEAD:master)"
