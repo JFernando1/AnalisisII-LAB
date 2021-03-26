@@ -26,11 +26,11 @@ pipeline {
  }
 	post {
 		   success {
-		   //  sshagent(credentials: ['thisUser-ssh-credentials']){
+		   sshagent(credentials: ['githubssh']){
 
 		       sh 'bash automatic-tags.sh'
 
-		    // }
+		   }
 		   }
 	   
 	   }
