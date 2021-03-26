@@ -20,5 +20,5 @@ echo "Publishing on Github..."
 #33f82ac39e7ba8448cffe26f2ac53d1cdf6b9854
 vrelease="$(git describe --tags)"
 
-curl --data '{"tag_name": "$vrelase","target_commitish": "master","name": "v$vrelease","body": "Release of version $vrelease","draft": false,"prerelease": false}' https://api.github.com/repos/JFernando1/AnalisisII-LAB/releases?access_token=:5f93deddb4f39b3501c9d340aa13db19e5709337
+curl --data '{"tag_name": "$vrelase","target_commitish": "master","name": "v$vrelease","body": "Release of version $vrelease","draft": false,"prerelease": false}' https://${}:${}api.github.com/repos/JFernando1/AnalisisII-LAB/releases/
 
