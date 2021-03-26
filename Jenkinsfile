@@ -26,11 +26,13 @@ pipeline {
  }
 	post {
 		   success {
-		   sshagent(credentials: ['githubssh']){
-
+		  // sshagent(credentials: ['githubssh']){
+		   withCredentials([usernamePassword(credentialsId:'jfer', passwordVariable:'PASSWORD',usernameVariable:'USERNAME')]){			
+		       echo USERNAME
 		       sh 'bash automatic-tags.sh'
-
 		   }
+
+		  // }
 		   }
 	   
 	   }
