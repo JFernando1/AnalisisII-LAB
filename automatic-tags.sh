@@ -17,7 +17,7 @@ newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
 echo "Creando un nuevo tag de la version $version a $newversion"
 
 #echo $(git tag -d 1.0.1)"
-#echo $(git tag -d 1.0.2)"
+##echo $(git tag -d 1.0.2)"
 #echo $(git tag -d 1.0.3)"
 #echo $(git tag -d 1.0.4)"
 #echo $(git tag -d 1.0.5)"
