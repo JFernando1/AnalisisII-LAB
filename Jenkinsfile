@@ -29,7 +29,7 @@ pipeline {
 		  // sshagent(credentials: ['githubssh']){
 		   withCredentials([usernamePassword(credentialsId:'jfer', passwordVariable:'PASSWORD',usernameVariable:'USERNAME')]){			
 		       echo USERNAME
-		       sh 'bash automatic-tags.sh'
+		      // sh 'bash automatic-tags.sh'
 		   }
 
 		  // }
