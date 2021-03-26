@@ -33,8 +33,9 @@ pipeline {
 			  env.encodedPass=URLEncoder.encode(PASSWORD,"UTF-8")
 			}
 		       sh 'bash automatic-tags.sh'
-		     //  sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
+		       sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
 			//sh ('git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags')
+		       sh 'bash newrelease.sh'
 		   }
 
 		  // }
