@@ -16,14 +16,14 @@ nversion=$((nversion+1))
 newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
 echo "Creando un nuevo tag de la version $version a $newversion"
 
-echo "$(git tag -d 1.0.1)"
-echo "$(git tag -d 1.0.2)"
-echo "$(git tag -d 1.0.3)"
-echo "$(git tag -d 1.0.4)"
-echo "$(git tag -d 1.0.5)"
-echo "$(git tag -d 1.0.6)"
-echo "$(git tag -d 1.0.7)"
-echo "$(git tag -d 1.0.8)"
+#echo $(git tag -d 1.0.1)"
+#echo $(git tag -d 1.0.2)"
+#echo $(git tag -d 1.0.3)"
+#echo $(git tag -d 1.0.4)"
+#echo $(git tag -d 1.0.5)"
+#echo $(git tag -d 1.0.6)"
+#echo $(git tag -d 1.0.7)"
+#echo $(git tag -d 1.0.8)"
 
 #echo $(git tag $newversion)"
 #echo $(git push https://${USERNAME}:${PASSWORD}@github.com/JFernando1/AnalisisII-LAB.git --tags)"
