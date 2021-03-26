@@ -28,13 +28,15 @@ echo "Creando un nuevo tag de la version $version a $newversion"
 
 
 #crear nuevo tag
-echo "$(git tag $newversion)"
+#echo "$(git tag $newversion)"
 #push del nuevo tag
-echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
+#echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
  
 
 #pushing to repository
 echo "Ejecutando push al repositorio"
+echo "$(git add .)"
+echo "$(git commit -m \"war\")"
 echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git HEAD:master)"
 
 
