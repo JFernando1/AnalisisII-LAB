@@ -41,7 +41,7 @@ pipeline {
 		       sh 'git add app.war'
 		       sh 'git branch'
 		       sh 'git commit -m "app war"'
-		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git -u origin master'
+		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git'
 		      // sh 'bash automatic-tags.sh'
 		    
 		       sh 'ls target/'
