@@ -40,7 +40,7 @@ echo "Ejecutando push al repositorio"
 ###
 #echo "$(git branch -M master .)"
 echo "$(git merge origin/master)"
-echo "$(git rebase origin/master)"
+echo "$(git --rebase origin/master)"
 echo "$(git add .)"
 ###echo "$(git merge master)"
 echo "$(git commit -m \"war\")"
