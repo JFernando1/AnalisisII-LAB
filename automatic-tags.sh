@@ -39,7 +39,7 @@ echo "Ejecutando push al repositorio"
 ##echo "$(git config user.name \"JFernando1\")"
 ##
 #echo "$(git branch -M master .)"
-echo "$(git branch -mv origin master)"
+echo "$(git pull)"
 echo "$(git add .)"
 ###echo "$(git merge master)"
 echo "$(git commit -m \"war\")"
