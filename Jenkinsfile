@@ -37,7 +37,7 @@ pipeline {
 			}
 		       ///sh 'git checkout origin/master'
 			sh 'git checkout master'
-		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
+		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app2.war'
 		       sh 'git add .'
 		       sh 'git branch'
 		       sh 'git commit -m "app war"'
