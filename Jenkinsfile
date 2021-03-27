@@ -15,8 +15,8 @@ pipeline {
 
    stage ('build') {
      steps {
-	sh 'git checkout master'
-	sh 'git show-ref'
+	sh 'git checkout origin/master'
+	sh 'git pull'
         //sh 'mvn clean install'
          sh 'pwd'
 	 //sh 'cd "/home/fernando/NetBeansProjects/Lab1-analisis/"'
