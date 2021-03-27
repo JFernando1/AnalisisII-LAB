@@ -43,7 +43,7 @@ echo "$(git branch -mv origin master)"
 echo "$(git add .)"
 ###echo "$(git merge master)"
 echo "$(git commit -m \"war\")"
-echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin refs/remotes/origin/master)"
+echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git)"
 
 
 
