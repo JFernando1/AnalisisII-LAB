@@ -16,7 +16,7 @@ pipeline {
 
    stage ('build') {
      steps {
-	sh 'git checkout master'
+	sh 'git checkout origin'
 	//sh 'git pull'
          sh 'mvn clean install'
          sh 'pwd'
