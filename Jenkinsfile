@@ -34,7 +34,7 @@ pipeline {
 			}
 		       sh 'bash automatic-tags.sh'
 		    
-		       sh 'ls /target/'
+		       sh 'ls target/'
 
 			/*sh ('vrelease="$(git describe --tags)" && curl --data \'{"tag_name":"$vrelase","target_commitish":"master","name":"v$vrelease","body":"Release of version $vrelease","draft":false,"prerelease":false}\' https://${USERNAME}:${encodedPass}@api.github.com/repos/JFernando1/AnalisisII-LAB/releases/')*/
 
