@@ -36,7 +36,7 @@ pipeline {
 			  env.encodedPass=URLEncoder.encode(PASSWORD,"UTF-8")
 			}
 		       ///sh 'git checkout origin/master'
-			sh 'git checkout master'
+			sh 'git checkout origin'
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
 		       sh 'git add .'
 		       sh 'git branch'
