@@ -40,7 +40,7 @@ pipeline {
 		       sh 'git add app.war'
 		       sh 'git commit -m "app war"'
 		       sh 'git branch'
-		       sh 'git switch origin master'
+		       sh 'git checkout -b origin master'
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git -u origin refs/remotes/origin/master'
 		      // sh 'bash automatic-tags.sh'
 		    
