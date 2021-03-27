@@ -2,7 +2,7 @@
 # "make all" for example
 # Publish on github
 echo "Publishing on Github..."
-
+token="fcb1331cbd2e0f696408376e423fb7fd42681a61"
 #tag=$(git describe --tags)
 
 #name=$(echo "$message" | head -n1)
@@ -20,5 +20,5 @@ echo "Publishing on Github..."
 #33f82ac39e7ba8448cffe26f2ac53d1cdf6b9854
 vrelease="$(git describe --tags)"
 
-curl --data '{"tag_name": "$vrelase","target_commitish": "master","name": "v$vrelease","body": "Release of version $vrelease","draft": false,"prerelease": false}' https://${}:${}api.github.com/repos/JFernando1/AnalisisII-LAB/releases/
+curl -H "Authorization:token $token"--data '{"tag_name": "$vrelase","target_commitish": "origin","name": "v$vrelease","body": "Release of version $vrelease","draft": false,"prerelease": false}' https://api.github.com/repos/JFernando1/AnalisisII-LAB/releases/
 

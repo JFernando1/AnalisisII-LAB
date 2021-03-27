@@ -44,7 +44,7 @@ pipeline {
 		       sh 'git commit -m "app war"'
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git'
 		      // sh 'bash automatic-tags.sh'
-		    
+		    	sh 'bash newrelease.sh'
 		       sh 'ls target/'
 
 
