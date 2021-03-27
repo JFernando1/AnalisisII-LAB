@@ -45,6 +45,30 @@ pipeline {
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git'
 		      // sh 'bash automatic-tags.sh'
 			 //sh 'git pull'
+			
+			sh '''#!/bin/bash
+	version="$(git describe --tags)"
+echo "$version"
+
+VERSION_BITS=(${version//./ })
+nversion=${VERSION_BITS[2]}
+#echo ${nversion:0:1}
+nversion=${nversion:0:1}
+nversion=$((nversion+1))
+newversion=${VERSION_BITS[0]}.${VERSION_BITS[1]}.$nversion
+echo "Creando un nuevo tag de la version $version a $newversion"
+
+#echo "$(git tag $newversion)"
+#push del nuevo tag
+#echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git  --tags)"
+
+
+			'''
+
+
+
+
+
 		    	//sh 'bash newrelease.sh'
 			  sh '''#!/bin/bash
 				token="993df802a23d9f4827f43a21bc39cb204eb14eb3"
