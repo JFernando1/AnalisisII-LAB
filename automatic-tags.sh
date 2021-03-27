@@ -44,7 +44,7 @@ echo "Ejecutando push al repositorio"
 echo "$(git add .)"
 ###echo "$(git merge master)"
 echo "$(git commit -m \"war\")"
-echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git)"
+echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin master)"
 
 
 
