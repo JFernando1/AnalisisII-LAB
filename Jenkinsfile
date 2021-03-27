@@ -40,6 +40,7 @@ pipeline {
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app2.war'
 		       sh 'git add .'
 		       sh 'git branch'
+		       sh 'git pull'
 		       sh 'git commit -m "app war"'
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git'
 		      // sh 'bash automatic-tags.sh'
