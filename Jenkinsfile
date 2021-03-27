@@ -35,12 +35,13 @@ pipeline {
 		       script {
 			  env.encodedPass=URLEncoder.encode(PASSWORD,"UTF-8")
 			}
-		       sh 'git checkout origin/master'
+		       //sh 'git checkout origin/master'
+			sh 'git checkout master'
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
 		       sh 'git add app.war'
 		       sh 'git commit -m "app war"'
 		       sh 'git branch'
-		       sh 'git checkout master'
+		       
 		       //sh 'git pull'
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git -u origin master'
 		      // sh 'bash automatic-tags.sh'
