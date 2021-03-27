@@ -38,7 +38,7 @@ pipeline {
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
 		       sh 'git add .'
 		       sh 'git commit -m "app war"'
-		       sh 'git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin master'
+		       sh 'git push --force https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin master'
 		       sh 'bash automatic-tags.sh'
 		    
 		       sh 'ls target/'
