@@ -38,7 +38,7 @@ pipeline {
 		       //sh 'git checkout origin/master'
 			sh 'git checkout master'
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
-		       sh 'git add app.war'
+		       sh 'git add .'
 		       sh 'git branch'
 		       sh 'git commit -m "app war"'
 		       sh 'git push  https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git'
