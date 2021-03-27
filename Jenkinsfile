@@ -18,7 +18,7 @@ pipeline {
      steps {
 	sh 'git checkout master'
 	//sh 'git pull'
-        //sh 'mvn clean install'
+         sh 'mvn clean install'
          sh 'pwd'
 	 //sh 'cd "/home/fernando/NetBeansProjects/Lab1-analisis/"'
 	 sh 'ls'
@@ -37,7 +37,7 @@ pipeline {
 			}
 		       ///sh 'git checkout origin/master'
 			sh 'git checkout master'
-		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app2.war'
+		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
 		       sh 'git add .'
 		       sh 'git branch'
 		       sh 'git pull'
