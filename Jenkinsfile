@@ -36,6 +36,8 @@ pipeline {
 			}
 		       sh 'git checkout origin/master'
 		       sh 'cp target/Lab1-analisis-1.0-SNAPSHOT.war app.war'
+		       sh 'git add .'
+		       sh 'git commit -m "app war"'
 		       sh 'bash automatic-tags.sh'
 		    
 		       sh 'ls target/'

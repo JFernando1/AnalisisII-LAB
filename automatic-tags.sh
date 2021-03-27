@@ -41,9 +41,9 @@ echo "Ejecutando push al repositorio"
 #echo "$(git branch -M master .)"
 #echo "$(git reset --hard origin/master)"
 #echo "$(git --rebase origin/master)"
-echo "$(git add .)"
+#echo "$(git add .)"
 ###echo "$(git merge master)"
-echo "$(git commit -m \"war\")"
+#echo "$(git commit -m \"war\")"
 echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin master)"
 
 
