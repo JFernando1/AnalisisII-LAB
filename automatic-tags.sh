@@ -38,8 +38,8 @@ echo "Ejecutando push al repositorio"
 #echo "$(git config user.email \"fernalgz@cunori.edu.gt\")"
 #echo "$(git config user.name \"JFernando1\")"
 
-#echo "$(git add .)"
-echo "$(git merge master)"
+echo "$(git add .)"
+#echo "$(git merge master)"
 echo "$(git commit -am \"war\")"
 echo "$(git push https://${USERNAME}:${encodedPass}@github.com/JFernando1/AnalisisII-LAB.git origin master)"
 
